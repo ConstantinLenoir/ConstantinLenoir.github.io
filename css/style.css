@@ -1,0 +1,132 @@
+
+@import url("python.css");
+
+/* SEE ALSO :root */
+html {
+    /* Custom properties. */
+    --header_height: 2cm;
+    --minibuffer_height_ratio: 0;
+    --minibuffer_rule: 0.0cm;
+    --menu_item_left_margin: 1cm;
+    --lateral_margin: 7vw;
+
+    /* Automatic custom properties. */
+    --_menu_height: calc( (1 - var(--minibuffer_height_ratio)) * var(--header_height) );
+    --_minibuffer_height: calc( var(--header_height) - var(--_menu_height) );
+
+    /* Alternate box model. */
+    box-sizing: border-box;
+
+    font-family: Helvetica,'Open Sans', Helvetica, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    /*'IBM Plex Sans', Roboto*/
+  }
+  
+*, *::before, *::after {
+    /* Alternate box model. */
+    box-sizing: inherit;
+
+    /* To disable all default margins. */
+    margin: 0px;
+}
+
+
+header {
+    /* SEE ALSO the "top" property (sticky header). */
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    opacity: 1;
+    width: 100%;
+    height: var(--header_height);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+#menu {
+    /* Flex container. */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: var(--_menu_height);
+    font-weight: bold;
+}
+
+#minibuffer {
+    height: var(--_minibuffer_height);
+    border: solid;
+    border-width: var(--minibuffer_rule) 0cm 0cm 0cm;
+    border-color: black;
+}
+
+#page_root {
+    padding-top: var(--header_height);
+    margin-left: var(--lateral_margin);
+    margin-right: var(--lateral_margin);
+}
+
+.menu_item {
+    margin-left: var(--menu_item_left_margin);
+}
+
+
+#main_page {
+    height: calc(100vh - var(--header_height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Anchor <a> rules have a specific chain of inheritance: link, visited,
+focus, hover, active. */
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button.link {
+    background: none;
+    border: none;
+    padding: 0;
+    /* outline is different from border ! */
+    outline-style: none;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+
+
+button.link:focus {
+    text-decoration: underline;
+}
+
+button.link:hover {
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+/* Text selection */
+
+/*
+... {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+*/
+
+
+p, h1, h2, h3, h4, h5, h6, pre {
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+}

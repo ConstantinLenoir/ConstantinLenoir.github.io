@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset='UTF-8'/>
+  </head>
+
+<p>20 février 2021</p>
+<div class="section" id="propos-sur-le-format-restructuredtext">
+<h1>Propos sur le format reStructuredText</h1>
+<p>Le format reStructuredText est un format de fichier. Son extension
+usuelle est <em>rst</em>. Le format <em>rst</em> définit un langage de balisage
+riche. Cette richesse, certains pourront la trouver baroque, voire
+incompatible avec leur attachement à la simplicité. Le format Markdown
+sera une bonne alternative pour ceux-là. Quant aux autres, ils seront
+peut-être intéressés par les lignes qui suivent.</p>
+<p>Le format <em>rst</em> est un format qui conviendra particulièrement aux
+programmeurs qui aiment écrire et pour qui la documentation est plus
+qu'une exigence habituelle dans les cahiers des charges. Il réalise
+aussi un bon compromis entre simplicité et puissance.</p>
+<div class="section" id="un-outil-de-documentation">
+<h2>Un outil de documentation</h2>
+<div class="section" id="un-probleme-de-memoire">
+<h3>Un problème de mémoire</h3>
+<p>Chaque programmeur s'est déjà retrouvé dans la situation de ne plus
+savoir lui-même comment son propre programme fonctionne. La
+documentation apporte une solution à ce problème. La documentation ne
+permet pas seulement d'expliquer aux utilisateurs d'un programme ce
+que ce programme fait. Elle permet aussi au programmeur de garder une
+trace des réflexions qui furent les siennes lors de la conception de
+son programme. Ces réflexions, une fois notées, pourront alors jouer
+un rôle dans un futur projet ou s'ajouter à une base de
+connaissances.</p>
+<p>Qu'il serait agréable de ne rencontrer que des programmes possédant un
+code source si clair que toute documentation serait inutile ! Dans la
+réalité, ces rencontres sont rares. L'algorithme de recherche de
+Knuth-Morris-Pratt, par exemple, restera toujours obscur s'il n'est
+accompagné d'explications.</p>
+<p>Pour aider les programmeurs dans leur apprentissage et dans leur
+travail de documentation, le format <em>rst</em> offre la possiblité de noter
+efficacement des idées d'architecture en les illustrant avec des
+fragments de code et en les organisant au moyen d'un plan.</p>
+</div>
+<div class="section" id="une-digression-litteraire">
+<h3>Une digression littéraire</h3>
+<p>La programmation est-elle un art qui mêle la littérature et les
+mathématiques ? Edsger Dijkstra et Donald Knuth ont déjà développé
+cette idée.</p>
+<p>Un bon programmeur ne devrait-il pas d'abord être capable d'exprimer
+en bon français les problèmes qu'il se propose de résoudre ?</p>
+<p>N'est-il pas vrai que tout programme peut se concevoir en pseudo-code
+indépendamment de tout langage de programmation particulier ? Certains
+programmeurs peuvent être guidés avec profit par l'architecture de
+certains langages. L'histoire de la découverte du <em>tri rapide</em> par
+Tony Hoare est un exemple notable de cette alchimie. On pourrait aussi
+citer les qualités littéraires des patrons de conception tels qu'ils
+furent définis par le <em>Gang of Four</em>.</p>
+<p>D'après Christoph Dürr et Jill-Jênn Vie, dans leur ouvrage sur la
+programmation efficace, expliquer à quelqu'un (ou un canard) ce qu'un
+programme défaillant était censé faire, ligne après ligne, serait la
+meilleure méthode pour comprendre ce qui n'a pas fonctionné dans ce
+programme.</p>
+<p>Mon professeur de mathématiques en deuxième année de classe
+préparatoire disait souvent : «Il faut toujours commencer à son
+premier niveau d'incompétence.» Des progrès au niveau de la
+littérature pourront peut-être économiser à certains de nombreux
+<em>points d'arrêt</em>.</p>
+</div>
+<div class="section" id="un-exemple">
+<h3>Un exemple</h3>
+<p>Pour insérer des lignes de code dans un fichier <em>rst</em>, il suffit
+d'utiliser la bonne directive et de respecter des règles relatives
+à l'indentation et aux sauts de ligne.</p>
+<pre class="code python literal-block">
+<span class="k">def</span> <span class="nf">my_function</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;A simple function.&quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello!&quot;</span><span class="p">)</span>
+</pre>
+</div>
+</div>
+<div class="section" id="un-format-simple-et-puissant">
+<h2>Un format simple et puissant</h2>
+<div class="section" id="des-balises-presque-invisibles">
+<h3>Des balises presque invisibles</h3>
+<p>Un fichier <em>rst</em> est un simple fichier texte. Il est donc plus simple à
+lire et à éditer qu'un fichier binaire ! La structure des documents
+<em>rst</em> repose sur le soulignement des titres. Ce soulignement n'est pas
+simplement esthétique dans le format <em>rst</em>, il constitue une véritable
+balise.</p>
+</div>
+<div class="section" id="conserver-des-donnees-et-des-metadonnees">
+<h3>Conserver des données et des métadonnées</h3>
+<p>Le format <em>rst</em> est puissant car il donne la possibilité de sauvegarder
+non seulement un texte mais aussi sa structure hiérarchique et ses
+liens avec d'autres textes (métadonnées). Grâce au programme Docutils
+(l'analyseur syntaxique de référence pour le format <em>rst</em>), vous pourrez
+écrire des programmes qui analyseront vos fichiers <em>rst</em> et seront
+capables d'en extraire sans ambiguïté une grande variété
+d'informations.</p>
+</div>
+</div>
+<div class="section" id="un-format-plebiscite">
+<h2>Un format plébiscité</h2>
+<p>Le format <em>rst</em> est très employé par les praticiens du langage
+Python. C'est le principal format dans lequel la documentation des
+programmes Python est rédigée.</p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>Le format <em>rst</em> présente de nombreux avantages pour un grand nombre
+d'utilisations. On peut l'utiliser par exemple pour représenter le
+contenu des pages constituant un site web.</p>
+<p>Constantin Lenoir</p>
+</div>
+</div>
+
+
+</html>
