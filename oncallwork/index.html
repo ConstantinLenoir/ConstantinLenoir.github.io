@@ -21,8 +21,12 @@
             defer
             src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
         ></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body
         hx-headers='{"X-CSRFToken": "zjSwqWqSqoIkA7lrCx2fHKLtDsILt9Y0cBXo4tg5SEAFMpfoYTm0Z1lBRdAndLw6"}'
@@ -55,74 +59,153 @@
                     </p>
                     <div class="accordion px-md-3 my-4" id="accordionExample">
                         <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                              Système de planification des périodes d'astreinte
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                            <div class="accordion-body fs-6">
-                                <p class="fs-6">
-                                    Prise en compte automatique des seuils réglementaires de repos quotidien et hebdomadaire.
-                                    Calendrier interactif. Filtres par période, par collaborateur et par client.
-                                </p>
-                                <p>Possibilité de définir des <em>objectifs de disponibilité</em> sur une plage temporel pour un client et vérification automatique de l'accomplissement de ces objectif. Suggestion des collaborateurs disponibles pour atteindre l'objectif.</p>
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button fs-5"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Système de planification des périodes
+                                    d'astreinte
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseOne"
+                                class="accordion-collapse collapse show fs-6"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body fs-6">
+                                    <p class="fs-6">
+                                        Prise en compte automatique des seuils
+                                        réglementaires de repos quotidien et
+                                        hebdomadaire. Calendrier interactif.
+                                        Filtres par période, par collaborateur
+                                        et par client.
+                                    </p>
+                                    <p>
+                                        Possibilité de définir des
+                                        <em>objectifs de disponibilité</em> sur
+                                        une plage temporel pour un client et
+                                        vérification automatique de
+                                        l'accomplissement de ces objectif.
+                                        Suggestion des collaborateurs
+                                        disponibles pour atteindre l'objectif.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Déclaration des missions par les collaborateurs
-                            </button>
-                          </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body fs-6">
-                              Formulaires optimisés en plusieurs étapes pour permettre aux collaborateurs de déclarer <strong>avec exactitude et au fur et à mesure</strong> les détails de leurs interventions : 
-                              <ul>
-                                <li>type de la mission,</li>
-                                <li>temps,</li>
-                                <li>tâches effectuées,</li>
-                                <li>client,</li>
-                                <li>frais etc.</li>
-                              </ul>
-                              Prise en compte du statut des missions :
-                              <ul>
-                                <li>mission déclarée,</li>
-                                <li>informations complémentaires demandées,</li>
-                                <li>mision validée.</li>
-                              </ul>  
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Validation des missions et envoi en paie
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body fs-6">
-                              Validation des missions par les superviseurs. Échanges d'informations complémentaires possibles. Interfaçage automatique avec les API de vos systèmes existants pour la paie, la facturation, le contrôle etc.
-                            </div>
-                          </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                              <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Génération des documents obligatoires et analyses statistiques
-                              </button>
+                                <button
+                                    class="accordion-button collapsed fs-5"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo"
+                                >
+                                    Déclaration des missions par les
+                                    collaborateurs
+                                </button>
                             </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                              <div class="accordion-body fs-6">
-                                Synthèse mensuelle des astreintes pour chaque collaborateur. Tableaux de bord sur la fréquence des missions en fonction de leur type, de leur durée etc.
-                              </div>
+                            <div
+                                id="collapseTwo"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body fs-6">
+                                    Formulaires optimisés en plusieurs étapes
+                                    pour permettre aux collaborateurs de
+                                    déclarer
+                                    <strong
+                                        >avec exactitude et au fur et à
+                                        mesure</strong
+                                    >
+                                    les détails de leurs interventions :
+                                    <ul>
+                                        <li>type de la mission,</li>
+                                        <li>temps,</li>
+                                        <li>tâches effectuées,</li>
+                                        <li>client,</li>
+                                        <li>frais etc.</li>
+                                    </ul>
+                                    Prise en compte du statut des missions :
+                                    <ul>
+                                        <li>mission déclarée,</li>
+                                        <li>
+                                            informations complémentaires
+                                            demandées,
+                                        </li>
+                                        <li>mision validée.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed fs-5"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="collapseThree"
+                                >
+                                    Validation des missions et envoi en paie
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseThree"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body fs-6">
+                                    Validation des missions par les
+                                    superviseurs. Échanges d'informations
+                                    complémentaires possibles. Interfaçage
+                                    automatique avec les API de vos systèmes
+                                    existants pour la paie, la facturation, le
+                                    contrôle etc.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed fs-5"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour"
+                                    aria-expanded="false"
+                                    aria-controls="collapseFour"
+                                >
+                                    Génération des documents obligatoires et
+                                    analyses statistiques
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseFour"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body fs-6">
+                                    Synthèse mensuelle des astreintes pour
+                                    chaque collaborateur. Tableaux de bord sur
+                                    la fréquence des missions en fonction de
+                                    leur type, de leur durée etc.
+                                </div>
                             </div>
                         </div>
                     </div>
                     <p class="fs-5">
                         Différents flux d'information se croisent dans le
-                        fonctionnement normal des astreintes. Avec une application dédiée, vous simplifierez le travail de vos équipes en synchronisant tous les flux et en augmentant la qualité des informations partagées.
+                        fonctionnement normal des astreintes. Avec une
+                        application dédiée, vous simplifierez le travail de vos
+                        équipes en synchronisant tous les flux et en augmentant
+                        la qualité des informations partagées.
                     </p>
                     <div class="my-4 mb-4 d-flex justify-content-center">
                         <img
@@ -143,7 +226,14 @@
                         de développement, tarif préférentiel), contactez-nous à
                         l'adresse suivante.
                     </p>
-                    <div class="text-center" style="margin-bottom: 50vh"><a class="fs-6 text-center" href="mailto:constantinlenoir+prototypes@gmail.com" target="_blank">constantinlenoir+prototypes@gmail.com</a></div>
+                    <div class="text-center" style="margin-bottom: 50vh">
+                        <a
+                            class="fs-6 text-center"
+                            href="mailto:constantinlenoir+prototypes@gmail.com"
+                            target="_blank"
+                            >constantinlenoir+prototypes@gmail.com</a
+                        >
+                    </div>
                     <!-- Ajouter une section «À propos»... -->
                 </div>
             </div>
