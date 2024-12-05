@@ -3,6 +3,11 @@
 https://constantinlenoir.github.io/oncallwork/
 
 
+
+```
+npx http-server ~/ConstantinLenoir.github.io
+```
+
 python3.8 -m venv .env
 source ./.env/bin/activate
 pip install --upgrade pip
